@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .rightsection div {
+            width: 30%;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+       
+
+        .leftsection .btn {
+
+            padding: 12px;
+            background: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 30vh;
+
+        }
+        .secondsection .leftsection{
+            font-size: 1.9rem;
+        }
+        .secondsection .leftsection{
+            font-size: 17px;
+        }
+
+        main hr {
+            border: 0;
+            background: blueviolet;
+            height: 1.2px;
+            margin: 10px 84px;
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection.vertical {
+            height: 95px;
+            width: 1px;
+            background-color: rgb(240, 228, 228);
+            margin: 0 100px;
+
+
+        }
+
+        .text-grey {
+            color: grey;
+            font-size: small;
+        }
+
+        .intro {
+            font-size: small
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 30vh;
+        
+
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 30vh;
+            padding: 20px;
+
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+        }
+        
+        
+        .fifthsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 30vh;
+        }
+        .fifthsection h1{
+            font-size: 1.9rem;
+        
+        }
+        /* Footer Styles */
+.footer {
+    background-color:blueviolet;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust the width as needed */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color:blueviolet; /* Change to your preferred hover color */
+}
+
+.footer-social a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color:blueviolet /* Change to your preferred hover color */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+
+/* Font Awesome Styles (Assuming you've included Font Awesome) */
+.fab {
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sarvesh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About me</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi ,My name is <span class="purple">Sarvesh Bhapkar </span>
+                <div>and i am a passionate<div></div>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                    <br><br>
+
+                    <div class="button">
+                        <button class="btn">Download resume</button>
+                        <button class="btn">Visit GitHub</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="PngItem_1127587.png">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <div class="leftsection">
+            <!--  <span class="text-grey">This is who i am </span>-->
+            <h1>About Me </h1>
+
+            <div>A Java Developer is a skilled software professional specializing in the design,
+                development, and maintenance of applications using the Java programming language.
+                These professionals play a pivotal role in the software development lifecycle,
+                leveraging their expertise to create robust and efficient solutions that power a wide range of
+                applications,
+                from web and mobile apps to enterprise-level systems.
+            </div>
+        </div>
+        <div class="rightsection">
+            <img >
+        </div>
+
+        </section>
+
+        <hr>
+
+        <section class="thirdsection">
+            <h1>Education</h1>
+            <div>
+                X (SSC) | k.m.s dr shrodkar high school | 76.80 % | 2017 |
+                Maharashtra State Board of Secondary and Higher Secondary
+            </div>
+            <br>
+            <div>
+                XII (HSC)| KBPV college ,Sarola Kasar | 66.00% |2019
+                Science
+                Maharashtra State Board of Secondary and Higher Secondary
+            </div>
+
+            <br>
+
+            <div>
+                Bsc It | Elphinstone college,mumbai | 8.70(CGPA) | 2022
+                Bachelor of Science in Information Technology University of pune
+            </div>
+
+            <br>
+
+            <div>
+                MCA | Thakur Institute of Management Studies Career
+                Development& Research (TIMSCDR), Mumbai| Pursuing |2023
+                University of Mumbai
+
+            </div>
+            <br>
+
+
+        </section>
+        <br><br><br>
+        <hr>
+        
+
+
+        <section class="fourthsection">
+
+            <h1>Projects</h1>
+            <div>
+                <h2> 1> Email spam classifier</h2>
+                <h3>Email Spam Classifier is a tool built with Python and Streamlit <br>that uses
+                    natural language processing techniques to analyse<br> and interpret the
+                    spam emails and classify it.<br><br>
+                    - technology used -streamlit,firebase.<br>
+                    - Programming Language Used: Python</h3>
+            </div>
+            <br>
+            <div>
+                <h2> 2> Java quiz Application</h2>
+                <h3>A Java quiz web application build with java and spring boot with<br> the
+                    crud operations<br>
+                    - technology used-spring boot,postgresql<br>
+                    - Programming Language Used: Java <h3>
+            </div>
+           
+            <hr>
+            <br>
+            <section class="thirdsection">
+                <h1>certification Programs</h1>
+                <div>
+                   -  Professional Java Developer from squad infotech(2022)
+                </div>
+
+
+                <br>
+                <div>
+                    - Digital Marketing 2021 (Accenture)
+
+                </div>
+    
+                <br>
+    
+                <div>
+                   -  Digital skill for Work and Life (Accenture)
+                </div>
+    
+                <br>
+    
+                <div>
+                    - TCS iON Career Edge - Young Professional from TCS iON
+    
+                </div>
+                
+            </section>
+            <br><br><br>
+
+            <br>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Sarvesh Bhapkar">
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/https://www.linkedin.com/in/sarvesh-bhapkar" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sarveshbhapkar" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Sarvesh Bhapkar. All Rights Reserved.</p>
+                </div>
+            </footer>
+            
+
+
+
+            
+
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Student', 'Java Developer', 'Programmer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
